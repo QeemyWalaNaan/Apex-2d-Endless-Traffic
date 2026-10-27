@@ -113,8 +113,10 @@ button:focus-visible,select:focus-visible{outline:2px solid var(--cyan);outline-
 input[type="range"]{width:min(180px,45vw);accent-color:var(--cyan)}.volume-row{font-size:11px}
 body.playing #globalSound{display:none}#pauseSound{margin-top:8px}
 .garage-wallet{margin:8px auto;color:var(--orange);font:800 13px 'Orbitron'}.garage-notice{min-height:20px;margin:4px auto;color:#a8e8ec;font:700 11px 'Rajdhani'}
-.gameover.overlay{background:transparent;backdrop-filter:none}
-.gameover .result-card{width:min(500px,calc(100vw - 32px));padding:clamp(22px,4vw,36px);background:rgba(5,9,24,.92)}
+body:not(.playing) .ability,body:not(.playing) .mission-banner{display:none}
+.gameover.overlay{align-content:start;padding-top:clamp(12px,3vh,24px);background:transparent;backdrop-filter:none}
+.gameover .result-card{width:min(500px,calc(100vw - 32px));padding:clamp(16px,2.5vw,24px);background:rgba(5,9,24,.94)}
+@media(max-height:680px){.gameover.overlay{padding-top:10px}.gameover .result-card{padding:12px 18px}.gameover .result-stats{margin:12px 0}.gameover .result-stats strong{font-size:20px}}
 </style>
 </head>
 <body>
